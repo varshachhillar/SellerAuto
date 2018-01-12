@@ -1,0 +1,4 @@
+com\seller\qa\tests\CreatePODetailTest.class
+com\seller\qa\tests\POListTest.class
+com\seller\qa\tests\LoginPageTest.class
+com\seller\qa\tests\HomePageTest.class

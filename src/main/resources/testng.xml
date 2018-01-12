@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Seller Test Automation Test Suite">
+
+	<listeners>
+		<listener class-name="com.seller.qa.extentreportlistener.ExtentReportListener" />
+	</listeners>
+
+
+	<test name="Seller Test Cases">
+		<classes>
+			<class name="com.seller.qa.tests.LoginPageTest"></class>
+			<class name="com.seller.qa.tests.HomePageTest"></class>
+			<class name="com.seller.qa.tests.POListTest"></class>
+			<class name="com.seller.qa.tests.CreatePODetailTest"></class>
+			
+
+		</classes>
+	</test>
+</suite>
