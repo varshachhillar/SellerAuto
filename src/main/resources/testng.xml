@@ -11,9 +11,9 @@
 		<classes>
 			<class name="com.seller.qa.tests.LoginPageTest"></class>
 			<class name="com.seller.qa.tests.HomePageTest"></class>
-			<class name="com.seller.qa.tests.POListTest"></class>
+<!--			<class name="com.seller.qa.tests.POListTest"></class>
 			<class name="com.seller.qa.tests.CreatePODetailTest"></class>
-			
+-->			
 
 		</classes>
 	</test>
