@@ -3,15 +3,15 @@
 <suite name="Seller Test Automation Test Suite">
 
 	<listeners>
-		<listener class-name="com.seller.qa.extentreportlistener.ExtentReportListener" />
+		<listener class-name="com.seller.qa.extentreportlistener.ExtentReporterNG" />
 	</listeners>
 
 
 	<test name="Seller Test Cases">
 		<classes>
 			<class name="com.seller.qa.tests.LoginPageTest"></class>
-			<class name="com.seller.qa.tests.HomePageTest"></class>
-<!--			<class name="com.seller.qa.tests.POListTest"></class>
+<!--		<class name="com.seller.qa.tests.HomePageTest"></class>
+			<class name="com.seller.qa.tests.POListTest"></class>
 			<class name="com.seller.qa.tests.CreatePODetailTest"></class>
 -->			
 

@@ -1,6 +1,5 @@
 package com.seller.qa.extentreportlistener;
 
-
 import java.io.File;
 import java.util.Calendar;
 import java.util.Date;
@@ -19,15 +18,13 @@ import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 
-
-
-public class ExtentReportListener implements IReporter {
+public class ExtentReporterNG implements IReporter {
 	private ExtentReports extent;
 
 	public void generateReport(List<XmlSuite> xmlSuites, List<ISuite> suites,
 			String outputDirectory) {
 		extent = new ExtentReports(outputDirectory + File.separator
-				+ "sellerExtent.html", true);
+				+ "Extent.html", true);
 
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
@@ -76,4 +73,3 @@ public class ExtentReportListener implements IReporter {
 		return calendar.getTime();
 	}
 }
-
