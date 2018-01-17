@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite verbose="0" name="Failed suite [Command line suite]">
+<suite name="Failed suite [Command line suite]" verbose="0">
   <test name="Command line test(failed)">
     <classes>
-      <class name="com.seller.qa.tests.POListTest">
-        <methods>
-          <include name="teardown"/>
-          <include name="createPOTest"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.seller.qa.tests.POListTest -->
       <class name="com.seller.qa.tests.CreatePODetailTest">
         <methods>
           <include name="fillcorrectpodetail"/>
@@ -17,21 +10,6 @@
           <include name="setup"/>
         </methods>
       </class> <!-- com.seller.qa.tests.CreatePODetailTest -->
-      <class name="com.seller.qa.tests.HomePageTest">
-        <methods>
-          <include name="setup"/>
-          <include name="homePageTitleTest"/>
-          <include name="teardown"/>
-          <include name="verifyUsernameTest"/>
-        </methods>
-      </class> <!-- com.seller.qa.tests.HomePageTest -->
-      <class name="com.seller.qa.tests.LoginPageTest">
-        <methods>
-          <include name="loginPageTitleTest"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.seller.qa.tests.LoginPageTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

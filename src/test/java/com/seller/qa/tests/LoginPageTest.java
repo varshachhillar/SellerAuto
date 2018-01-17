@@ -9,6 +9,8 @@ import com.seller.qa.base.TestBase;
 import com.seller.qa.pages.HomePage;
 import com.seller.qa.pages.LoginPage;
 
+
+
 public class LoginPageTest extends TestBase {
 	LoginPage loginpage;
 	HomePage homepage;

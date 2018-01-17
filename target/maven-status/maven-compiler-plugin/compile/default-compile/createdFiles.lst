@@ -1,7 +1,7 @@
-com\seller\qa\extentreportlistener\ExtentReportListener.class
 com\seller\qa\util\TestUtil.class
 com\seller\qa\pages\CreatePODetailPage.class
 com\seller\qa\pages\HomePage.class
 com\seller\qa\pages\LoginPage.class
 com\seller\qa\base\TestBase.class
+com\seller\qa\extentreportlistener\ExtentReporterNG.class
 com\seller\qa\pages\POList.class
