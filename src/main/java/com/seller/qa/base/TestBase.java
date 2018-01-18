@@ -19,6 +19,11 @@ public class TestBase {
 	public static WebDriver driver;
 	public static Properties prop;
 	public static WebDriverWait wait;
+	public int RESPONSE_STATUS_CODE_200 = 200;
+	public int RESPONSE_STATUS_CODE_500 = 500;
+	public int RESPONSE_STATUS_CODE_401 = 401;
+
+	
 
 
 	public TestBase() {

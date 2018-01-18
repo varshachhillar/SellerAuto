@@ -1,37 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-01-17T06:22:42Z" name="Seller Test Automation Test Suite" finished-at="2018-01-17T06:23:26Z" duration-ms="44617">
+  <suite started-at="2018-01-18T09:31:07Z" name="Default suite" finished-at="2018-01-18T09:31:10Z" duration-ms="3080">
     <groups>
     </groups>
-    <test started-at="2018-01-17T06:22:42Z" name="Seller Test Cases" finished-at="2018-01-17T06:23:26Z" duration-ms="44617">
-      <class name="com.seller.qa.tests.LoginPageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.seller.qa.tests.LoginPageTest@4a668b6e]" started-at="2018-01-17T11:52:42Z" name="setup" finished-at="2018-01-17T11:53:08Z" duration-ms="26703" status="PASS">
+    <test started-at="2018-01-18T09:31:07Z" name="Default test" finished-at="2018-01-18T09:31:10Z" duration-ms="3080">
+      <class name="com.vinc.qa.tests.GetAPITest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.vinc.qa.tests.GetAPITest@68e965f5]" started-at="2018-01-18T15:01:07Z" name="setUp" finished-at="2018-01-18T15:01:07Z" duration-ms="32" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginTest()[pri:1, instance:com.seller.qa.tests.LoginPageTest@4a668b6e]" started-at="2018-01-17T11:53:08Z" name="loginTest" finished-at="2018-01-17T11:53:17Z" duration-ms="8155" status="PASS">
+        </test-method> <!-- setUp -->
+        <test-method signature="getTestWithHeader()[pri:0, instance:com.vinc.qa.tests.GetAPITest@68e965f5]" started-at="2018-01-18T15:01:07Z" name="getTestWithHeader" finished-at="2018-01-18T15:01:10Z" duration-ms="2962" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.seller.qa.tests.LoginPageTest@4a668b6e]" started-at="2018-01-17T11:53:17Z" name="teardown" finished-at="2018-01-17T11:53:17Z" duration-ms="812" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-        <test-method is-config="true" signature="setup()[pri:0, instance:com.seller.qa.tests.LoginPageTest@4a668b6e]" started-at="2018-01-17T11:53:17Z" name="setup" finished-at="2018-01-17T11:53:25Z" duration-ms="7940" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="loginPageTitleTest()[pri:2, instance:com.seller.qa.tests.LoginPageTest@4a668b6e]" started-at="2018-01-17T11:53:25Z" name="loginPageTitleTest" finished-at="2018-01-17T11:53:25Z" duration-ms="43" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginPageTitleTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:com.seller.qa.tests.LoginPageTest@4a668b6e]" started-at="2018-01-17T11:53:25Z" name="teardown" finished-at="2018-01-17T11:53:26Z" duration-ms="885" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- com.seller.qa.tests.LoginPageTest -->
-    </test> <!-- Seller Test Cases -->
-  </suite> <!-- Seller Test Automation Test Suite -->
+        </test-method> <!-- getTestWithHeader -->
+      </class> <!-- com.vinc.qa.tests.GetAPITest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -73,6 +73,28 @@
     	<artifactId>log4j-api</artifactId>
     	<version>2.10.0</version>
     </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpclient</artifactId>
+		<version>4.5.3</version>
+	</dependency>
+
+
+	<!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpcore -->
+	<dependency>
+		<groupId>org.apache.httpcomponents</groupId>
+		<artifactId>httpcore</artifactId>
+		<version>4.4.7</version>
+	</dependency>
+	
+	<dependency>
+		<groupId>org.json</groupId>
+		<artifactId>json</artifactId>
+		<version>20160212</version>
+	</dependency>
+		
 
           
   </dependencies>

@@ -3,13 +3,12 @@
 <suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.seller.qa.tests.CreatePODetailTest">
+      <class name="com.vinc.qa.tests.GetAPITest">
         <methods>
-          <include name="fillcorrectpodetail"/>
-          <include name="teardown"/>
-          <include name="setup"/>
+          <include name="setUp"/>
+          <include name="getTestWithHeader"/>
         </methods>
-      </class> <!-- com.seller.qa.tests.CreatePODetailTest -->
+      </class> <!-- com.vinc.qa.tests.GetAPITest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

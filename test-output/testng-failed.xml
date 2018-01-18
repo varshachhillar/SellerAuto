@@ -1,27 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="-1" name="Failed suite [Seller Test Automation Test Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.seller.qa.extentreportlistener.ExtentReportListener"/>
-  </listeners>
-  <test name="Seller Test Cases(failed)">
+<suite thread-count="-1" name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
     <classes>
-      <class name="com.seller.qa.tests.HomePageTest">
+      <class name="com.vinc.qa.tests.GetAPITest">
         <methods>
-          <include name="setup"/>
-          <include name="homePageTitleTest"/>
-          <include name="teardown"/>
-          <include name="verifyUsernameTest"/>
+          <include name="setUp"/>
+          <include name="getTestWithHeader"/>
         </methods>
-      </class> <!-- com.seller.qa.tests.HomePageTest -->
-      <class name="com.seller.qa.tests.LoginPageTest">
-        <methods>
-          <include name="loginPageTitleTest"/>
-          <include name="loginTest"/>
-          <include name="teardown"/>
-          <include name="setup"/>
-        </methods>
-      </class> <!-- com.seller.qa.tests.LoginPageTest -->
+      </class> <!-- com.vinc.qa.tests.GetAPITest -->
     </classes>
-  </test> <!-- Seller Test Cases(failed) -->
-</suite> <!-- Failed suite [Seller Test Automation Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
