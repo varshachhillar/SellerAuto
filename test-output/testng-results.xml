@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-01-18T09:31:07Z" name="Default suite" finished-at="2018-01-18T09:31:10Z" duration-ms="3080">
+  <suite started-at="2018-01-19T09:06:56Z" name="Default suite" finished-at="2018-01-19T09:06:58Z" duration-ms="1968">
     <groups>
     </groups>
-    <test started-at="2018-01-18T09:31:07Z" name="Default test" finished-at="2018-01-18T09:31:10Z" duration-ms="3080">
-      <class name="com.vinc.qa.tests.GetAPITest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.vinc.qa.tests.GetAPITest@68e965f5]" started-at="2018-01-18T15:01:07Z" name="setUp" finished-at="2018-01-18T15:01:07Z" duration-ms="32" status="PASS">
+    <test started-at="2018-01-19T09:06:56Z" name="Default test" finished-at="2018-01-19T09:06:58Z" duration-ms="1968">
+      <class name="com.vinc.qa.tests.PostAPITest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.vinc.qa.tests.PostAPITest@4e268090]" started-at="2018-01-19T14:36:56Z" name="setUp" finished-at="2018-01-19T14:36:56Z" duration-ms="22" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="getTestWithHeader()[pri:0, instance:com.vinc.qa.tests.GetAPITest@68e965f5]" started-at="2018-01-18T15:01:07Z" name="getTestWithHeader" finished-at="2018-01-18T15:01:10Z" duration-ms="2962" status="PASS">
+        <test-method signature="postTest()[pri:0, instance:com.vinc.qa.tests.PostAPITest@4e268090]" started-at="2018-01-19T14:36:56Z" name="postTest" finished-at="2018-01-19T14:36:58Z" duration-ms="1863" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getTestWithHeader -->
-      </class> <!-- com.vinc.qa.tests.GetAPITest -->
+        </test-method> <!-- postTest -->
+      </class> <!-- com.vinc.qa.tests.PostAPITest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

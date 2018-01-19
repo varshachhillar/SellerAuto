@@ -1,54 +1,42 @@
-2018-01-18 15:01:08,685 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: default
-2018-01-18 15:01:08,713 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
-2018-01-18 15:01:08,718 DEBUG [main] PoolingHttpClientConnectionManager:255 - Connection request: [route: {}->http://admin.staging.industrybuying.com:80][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
-2018-01-18 15:01:08,778 DEBUG [main] PoolingHttpClientConnectionManager:288 - Connection leased: [id: 0][route: {}->http://admin.staging.industrybuying.com:80][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
-2018-01-18 15:01:08,783 DEBUG [main] MainClientExec:235 - Opening connection {}->http://admin.staging.industrybuying.com:80
-2018-01-18 15:01:08,793 DEBUG [main] DefaultHttpClientConnectionOperator:139 - Connecting to admin.staging.industrybuying.com/13.126.16.177:80
-2018-01-18 15:01:08,833 DEBUG [main] DefaultHttpClientConnectionOperator:146 - Connection established 192.168.4.184:64882<->13.126.16.177:80
-2018-01-18 15:01:08,834 DEBUG [main] MainClientExec:256 - Executing request GET /vinculum/orders/?order_id=101586841 HTTP/1.1
-2018-01-18 15:01:08,836 DEBUG [main] MainClientExec:267 - Proxy auth state: UNCHALLENGED
-2018-01-18 15:01:08,840 DEBUG [main] headers:133 - http-outgoing-0 >> GET /vinculum/orders/?order_id=101586841 HTTP/1.1
-2018-01-18 15:01:08,842 DEBUG [main] headers:136 - http-outgoing-0 >> Authorization: token acbca1081b92f0ed8ccc411bce2ee4b4ee418998
-2018-01-18 15:01:08,844 DEBUG [main] headers:136 - http-outgoing-0 >> Host: admin.staging.industrybuying.com
-2018-01-18 15:01:08,845 DEBUG [main] headers:136 - http-outgoing-0 >> Connection: Keep-Alive
-2018-01-18 15:01:08,847 DEBUG [main] headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/9.0.1)
-2018-01-18 15:01:08,849 DEBUG [main] headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
-2018-01-18 15:01:08,851 DEBUG [main] wire:73 - http-outgoing-0 >> "GET /vinculum/orders/?order_id=101586841 HTTP/1.1[\r][\n]"
-2018-01-18 15:01:08,852 DEBUG [main] wire:73 - http-outgoing-0 >> "Authorization: token acbca1081b92f0ed8ccc411bce2ee4b4ee418998[\r][\n]"
-2018-01-18 15:01:08,853 DEBUG [main] wire:73 - http-outgoing-0 >> "Host: admin.staging.industrybuying.com[\r][\n]"
-2018-01-18 15:01:08,855 DEBUG [main] wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
-2018-01-18 15:01:08,856 DEBUG [main] wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/9.0.1)[\r][\n]"
-2018-01-18 15:01:08,858 DEBUG [main] wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
-2018-01-18 15:01:08,859 DEBUG [main] wire:73 - http-outgoing-0 >> "[\r][\n]"
-2018-01-18 15:01:10,253 DEBUG [main] wire:73 - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
-2018-01-18 15:01:10,255 DEBUG [main] wire:73 - http-outgoing-0 << "Server: nginx/1.8.0[\r][\n]"
-2018-01-18 15:01:10,256 DEBUG [main] wire:73 - http-outgoing-0 << "Date: Thu, 18 Jan 2018 09:31:29 GMT[\r][\n]"
-2018-01-18 15:01:10,258 DEBUG [main] wire:73 - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
-2018-01-18 15:01:10,259 DEBUG [main] wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
-2018-01-18 15:01:10,260 DEBUG [main] wire:73 - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
-2018-01-18 15:01:10,261 DEBUG [main] wire:73 - http-outgoing-0 << "Vary: Accept-Encoding[\r][\n]"
-2018-01-18 15:01:10,262 DEBUG [main] wire:73 - http-outgoing-0 << "Vary: Cookie[\r][\n]"
-2018-01-18 15:01:10,263 DEBUG [main] wire:73 - http-outgoing-0 << "Allow: GET, HEAD, OPTIONS[\r][\n]"
-2018-01-18 15:01:10,265 DEBUG [main] wire:73 - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
-2018-01-18 15:01:10,266 DEBUG [main] wire:73 - http-outgoing-0 << "[\r][\n]"
-2018-01-18 15:01:10,267 DEBUG [main] wire:73 - http-outgoing-0 << "354[\r][\n]"
-2018-01-18 15:01:10,268 DEBUG [main] wire:73 - http-outgoing-0 << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xbd]U[0xdb]n[0x9b]@[0x10][0xfd][0x95][0x15][0xcf][0xce][0x8a][0xe5]j[0xfc]T[0x8a][0xd3][0xc6]j[0x82]IH[UUUm`[0x13][0xa3][0xc2]b-[0x8b][0x15]+[0xca][0xbf]w[0x16][0x16][0x17][0xec][0xa8]J^[0xe2]7[0xe6][0xb2]g[0xe6][0xcc][0x99][0xf1][0x93][0xb1][0x16]9[0x13]([0xae][0x8d][0x85]AL[0xe2][0xce][0xbd][0xb9]C[0x8c][0x99][0xf1][0x9d][0xdd]![0xed]j[0xab];&[0x8e][0xdc][0xbd]kI%[0x3][0x87]e[0x12][0xff][0x8c]Xg[0x96][0x89][0x88][0xb5]p[0xc9][0xc2]5[0xe1][0x85]TR[0xd9]6[0xe0][0xde]R![0xb]Z[0xa2]fSl[0xb7],[0x7]WB[0xf7][0x15][0xe3][0x12]]1[0xb9][0xa9]s[0x8][0xe1][0xec]^[0x82]}[0xd9]2[0xa4][0xdf][0xd4]_iYK[0xf0][0xc3]W[0x8f][0x18]Vu[0xcb][0xc1][0x12][0x98]f[0x80][0xcd][0x99][0xb1][0xe2][0xbb][0xba][0xc8][0x18]:[0xb6]/[0x8b]&S[0x91]Q[0x9d][0xab][\n]"
-2018-01-18 15:01:10,270 DEBUG [main] wire:73 - http-outgoing-0 << "[0xd5]k[0xda]2D*[*k[0xc1]"[0xc1][0xf2]B[0x83]T[0xac]i[0xe8][0x83][0xce]HU[0xbd][0x5]@[0xd1][0x86][0x8a][0x7][0x6][0xad][0x10][0xd3]R[0xa0]a[0xbe][0xa3]|[0x4]z(/j[0x85]`<[0xdb][0x3][0xe2]*[0xbe][0x1][0x80][0xa8]md][0x1][0xbf][0xc9][0x1a][0xf1][0x81]G[0xb0][0xdf]2Q5Q[0xcd][0x1][0xb8][0xa8][0xb9]"[0x9][0x8c][0xc9]:B1[0xad]4[0xba][0xfa][0x82][0x8]I3[0x89][0xe2]Q[0xaa][0xb2][0x9f]W[0xb4]([0xfb][0xa4][0xb4][0xdd]n[0xcb][0x2][0x10][0x4][0xbb]g[\n]"
-2018-01-18 15:01:10,272 DEBUG [main] wire:73 - http-outgoing-0 << "[0x9c]M[0x80][0xfa][0xe6]PN[0xf7][0x0][0xc2][0xdb][0xb2][0x1c][0x88][0x94][0xfb][0xad][0x2]Z[0xc7][0x97][0xab][0xf8]|\[0xa9][0xae]`[0xb7][0xdb][0x81][0xf5]@A[0x98][0xe7][0x2][0xb8][0x81][0x8c][0xc7][0x8c]W3t[0x11][0xde][0xfc][0x8][0xe3]P[0x87][0xa0][0xa4][0xe0][0x9a]ibY[0xa6]i[0x8d]S[0xa3]B*B[0x96][0xe5]=[0xba]fc[0x87][0x12][0x88][0xaa][0xe1][0x82][0x8a]=[0xe5]t[0xec][0x8a][0xd4][0xec]D[0xc7]#pt[0xe4][0x1a]&[0xaa][0x8a];P[0xb1][0xa3][0xa2][0xd9]P[0x9c]m6EYR[0xf1][0xa1][0xe0]9p/[0xf6]w[0xed][0x1e]F[0x88][0xb3][0xba]:[0xd4][0xba][0xa9][0xb9][0x82][\r][0xe6]d[0xee][0x7][0xb6][0xed]9[0x83][0xe7]sz[0xbb][0x8a][0x7][0x9a]>[0xc2];j[0xf8][0xd3][0xce]!T9^jxH8[0xee]w[0xb0][0x9f][0xb6];xN[0xbb][0xed]0[0x86])[0xbf][0xaa][0xb5].#y[0xa9][0xb5][0xce]3i[0xad]_[0xa5][0x95]d[0x15][0xc][0xf4][0xe7][0x93][0xf1][0x95][0x17][0x12][0xdd][0xd2]Gc[0xe1][0x7][0x9d][0xc0];[0xc3]a[0xf6][0x7][0xf9][0x83][0xf4]{[0xf]-[0x19]J[0x4][0xec][0x9d][0x1][0xdb]n[0xb9]j'z[0xa5][0xff][0xce]Y[0x93][0x89]b[0xab]TM[0x80]c[0xc5][0xec][0x9f]VK#[0x89]q[0x9a]`[0xe2]Y[0xae][0x19]([0xce]OS,[0x9d][0xf2][0xe5]+:^W[0xcf][0xb1][0xbb][0x85][0xef][\n]"
-2018-01-18 15:01:10,274 DEBUG [main] wire:73 - http-outgoing-0 << "8[0xc2][0xbe][0x96][0xfb][0xae]%[0xb8]-[0xb]23.[0xb][0xce][0xe][0xc7]'S[0x9b]Z[0x96][0xdd][0xd9][0x81][0xb8][0xe8][0xf0][0xa9]"[0xbf]1[0x9e][0xd7]p[0xfc][0xfa][0xa5];[0xdf][0xc1][0x2]5[0x12]i[0xe9][0xa8][0x93][0x95][0xd5]b[[0xb][0xaa][0xda][0x81][0x82]ux[0xdf][0x8e][0xeb]x[0x1e]t7*[0xf5][0xdf][0xad][0xf9]N[0x5][0xdb][0xd4]m[0xc3][0xe0][0x81]^[0xad][0xcf][0xb3]1[0xcd]&[0xb6]\o[0xf2]s[0x7]jOn[0x8e][0x89][0x89]?8G[0xbc][0x13][0xec][0xb9]s{[0xf4]s^"[0xf4]d[0x6][0x9f]B[0x9c]F8]c[0xc7][0xf1][0xed]7[0xf][0x81][0xe0]`>[0x1][0xb5]uez /[0x15]5[0x1e][0x8e]g[0x82]R&[0xe3][0x1]V[0xa7]S[0x81][0x80][0xe9]T[0x8e]y[0xef]4[0xf5]:[0xd6][0x97][0xe7][0x97][0xc6][0x94]x[0x1f][0xc3][0xd4][0xdf][0xa0]n[0xc7][0xc3][0xd6][0xab]xM[0xd6]8[0x8c][0xf0][0xc7]5&[0x8e]m[0xf9][0xb6][0xfd]Vy[0xdb][0xae][0x2][0x1a][0x8b][0xbb][0x87][0x1e][0xb3]G[0x8e][0xc9][0xcb][0x19]\~%Z[0xf5][0x9f][0xfa][0x9e]4[0xce][0x3][0xec][0xff]G[0xb1][0x3][0xc5]#[0xb9][0xba]s[0x2][0x9a][0x15][0x95][0xe1][0x12]_[0x85][0x98][0xb8][0xa0][0xcf][0xc0]+[0x8f][0xfe][0xbf][0xc2][0x86]#[0xa1][0x91][0xc7]L[0xc2][0xae][0xbc][0xb3][\n]"
-2018-01-18 15:01:10,275 DEBUG [main] wire:73 - http-outgoing-0 << "=[0xff][0x5][0xa2][0xf3][0xb7][0xc0]j[0x9][0x0][0x0][\r][\n]"
-2018-01-18 15:01:10,279 DEBUG [main] wire:73 - http-outgoing-0 << "0[\r][\n]"
-2018-01-18 15:01:10,280 DEBUG [main] wire:73 - http-outgoing-0 << "[\r][\n]"
-2018-01-18 15:01:10,287 DEBUG [main] headers:122 - http-outgoing-0 << HTTP/1.1 200 OK
-2018-01-18 15:01:10,289 DEBUG [main] headers:125 - http-outgoing-0 << Server: nginx/1.8.0
-2018-01-18 15:01:10,290 DEBUG [main] headers:125 - http-outgoing-0 << Date: Thu, 18 Jan 2018 09:31:29 GMT
-2018-01-18 15:01:10,291 DEBUG [main] headers:125 - http-outgoing-0 << Content-Type: application/json
-2018-01-18 15:01:10,292 DEBUG [main] headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
-2018-01-18 15:01:10,293 DEBUG [main] headers:125 - http-outgoing-0 << Connection: keep-alive
-2018-01-18 15:01:10,294 DEBUG [main] headers:125 - http-outgoing-0 << Vary: Accept-Encoding
-2018-01-18 15:01:10,295 DEBUG [main] headers:125 - http-outgoing-0 << Vary: Cookie
-2018-01-18 15:01:10,296 DEBUG [main] headers:125 - http-outgoing-0 << Allow: GET, HEAD, OPTIONS
-2018-01-18 15:01:10,297 DEBUG [main] headers:125 - http-outgoing-0 << Content-Encoding: gzip
-2018-01-18 15:01:10,313 DEBUG [main] MainClientExec:285 - Connection can be kept alive indefinitely
-2018-01-18 15:01:10,337 DEBUG [main] PoolingHttpClientConnectionManager:320 - Connection [id: 0][route: {}->http://admin.staging.industrybuying.com:80] can be kept alive indefinitely
-2018-01-18 15:01:10,339 DEBUG [main] PoolingHttpClientConnectionManager:326 - Connection released: [id: 0][route: {}->http://admin.staging.industrybuying.com:80][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-01-19 14:36:58,384 DEBUG [main] RequestAddCookies:123 - CookieSpec selected: default
+2018-01-19 14:36:58,408 DEBUG [main] RequestAuthCache:77 - Auth cache not set in the context
+2018-01-19 14:36:58,413 DEBUG [main] PoolingHttpClientConnectionManager:255 - Connection request: [route: {}->http://qa4.industrybuying.com:8090][total kept alive: 0; route allocated: 0 of 2; total allocated: 0 of 20]
+2018-01-19 14:36:58,444 DEBUG [main] PoolingHttpClientConnectionManager:288 - Connection leased: [id: 0][route: {}->http://qa4.industrybuying.com:8090][total kept alive: 0; route allocated: 1 of 2; total allocated: 1 of 20]
+2018-01-19 14:36:58,449 DEBUG [main] MainClientExec:235 - Opening connection {}->http://qa4.industrybuying.com:8090
+2018-01-19 14:36:58,554 DEBUG [main] DefaultHttpClientConnectionOperator:139 - Connecting to qa4.industrybuying.com/35.154.89.2:8090
+2018-01-19 14:36:58,588 DEBUG [main] DefaultHttpClientConnectionOperator:146 - Connection established 192.168.4.184:50102<->35.154.89.2:8090
+2018-01-19 14:36:58,589 DEBUG [main] MainClientExec:256 - Executing request POST /api/v1/users HTTP/1.1
+2018-01-19 14:36:58,590 DEBUG [main] MainClientExec:261 - Target auth state: UNCHALLENGED
+2018-01-19 14:36:58,591 DEBUG [main] MainClientExec:267 - Proxy auth state: UNCHALLENGED
+2018-01-19 14:36:58,595 DEBUG [main] headers:133 - http-outgoing-0 >> POST /api/v1/users HTTP/1.1
+2018-01-19 14:36:58,596 DEBUG [main] headers:136 - http-outgoing-0 >> Content-Type: application/json
+2018-01-19 14:36:58,597 DEBUG [main] headers:136 - http-outgoing-0 >> Content-Length: 142
+2018-01-19 14:36:58,598 DEBUG [main] headers:136 - http-outgoing-0 >> Host: qa4.industrybuying.com:8090
+2018-01-19 14:36:58,599 DEBUG [main] headers:136 - http-outgoing-0 >> Connection: Keep-Alive
+2018-01-19 14:36:58,600 DEBUG [main] headers:136 - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.3 (Java/9.0.1)
+2018-01-19 14:36:58,601 DEBUG [main] headers:136 - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+2018-01-19 14:36:58,602 DEBUG [main] wire:73 - http-outgoing-0 >> "POST /api/v1/users HTTP/1.1[\r][\n]"
+2018-01-19 14:36:58,603 DEBUG [main] wire:73 - http-outgoing-0 >> "Content-Type: application/json[\r][\n]"
+2018-01-19 14:36:58,604 DEBUG [main] wire:73 - http-outgoing-0 >> "Content-Length: 142[\r][\n]"
+2018-01-19 14:36:58,605 DEBUG [main] wire:73 - http-outgoing-0 >> "Host: qa4.industrybuying.com:8090[\r][\n]"
+2018-01-19 14:36:58,607 DEBUG [main] wire:73 - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+2018-01-19 14:36:58,608 DEBUG [main] wire:73 - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.3 (Java/9.0.1)[\r][\n]"
+2018-01-19 14:36:58,609 DEBUG [main] wire:73 - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2018-01-19 14:36:58,610 DEBUG [main] wire:73 - http-outgoing-0 >> "[\r][\n]"
+2018-01-19 14:36:58,611 DEBUG [main] wire:87 - http-outgoing-0 >> "{"firstName":"varsha","lastName":"automation","email":"vc3@ib.com","createdBy":"auto","modifiedBy":"auto","id":0,"createdOn":0,"modifiedOn":0}"
+2018-01-19 14:36:58,723 DEBUG [main] wire:73 - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2018-01-19 14:36:58,724 DEBUG [main] wire:73 - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+2018-01-19 14:36:58,725 DEBUG [main] wire:73 - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+2018-01-19 14:36:58,726 DEBUG [main] wire:73 - http-outgoing-0 << "Date: Fri, 19 Jan 2018 09:07:00 GMT[\r][\n]"
+2018-01-19 14:36:58,727 DEBUG [main] wire:73 - http-outgoing-0 << "[\r][\n]"
+2018-01-19 14:36:58,727 DEBUG [main] wire:73 - http-outgoing-0 << "9a[\r][\n]"
+2018-01-19 14:36:58,728 DEBUG [main] wire:73 - http-outgoing-0 << "{"id":0,"createdOn":0,"modifiedOn":1516352820236,"createdBy":"auto","modifiedBy":"auto","email":"vc3@ib.com","firstName":"varsha","lastName":"automation"}[\r][\n]"
+2018-01-19 14:36:58,733 DEBUG [main] headers:122 - http-outgoing-0 << HTTP/1.1 200 
+2018-01-19 14:36:58,733 DEBUG [main] headers:125 - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+2018-01-19 14:36:58,734 DEBUG [main] headers:125 - http-outgoing-0 << Transfer-Encoding: chunked
+2018-01-19 14:36:58,735 DEBUG [main] headers:125 - http-outgoing-0 << Date: Fri, 19 Jan 2018 09:07:00 GMT
+2018-01-19 14:36:58,745 DEBUG [main] MainClientExec:285 - Connection can be kept alive indefinitely
+2018-01-19 14:36:58,754 DEBUG [main] wire:73 - http-outgoing-0 << "0[\r][\n]"
+2018-01-19 14:36:58,755 DEBUG [main] wire:73 - http-outgoing-0 << "[\r][\n]"
+2018-01-19 14:36:58,756 DEBUG [main] PoolingHttpClientConnectionManager:320 - Connection [id: 0][route: {}->http://qa4.industrybuying.com:8090] can be kept alive indefinitely
+2018-01-19 14:36:58,756 DEBUG [main] PoolingHttpClientConnectionManager:326 - Connection released: [id: 0][route: {}->http://qa4.industrybuying.com:8090][total kept alive: 1; route allocated: 1 of 2; total allocated: 1 of 20]
