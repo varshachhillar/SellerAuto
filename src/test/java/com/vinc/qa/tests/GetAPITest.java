@@ -36,38 +36,38 @@ public class GetAPITest extends TestBase {
 		headerMap = new HashMap<String, String>();
 	}
 	
-//	@Test
-//	public void getTestWithoutHeader() throws ClientProtocolException, IOException {
-//		closeableHttpResponse = restclient.get(apiurl);		
-//
-//		//Status Code
-//		int statusCode = closeableHttpResponse.getStatusLine().getStatusCode();
-//		System.out.println("Status Code-----------> "+ statusCode);
-//		Assert.assertEquals(statusCode, RESPONSE_STATUS_CODE_200,"Status code is not as expected");
-//
-//		//Response body
-//		String responseString = EntityUtils.toString(closeableHttpResponse.getEntity(),"UTF-8");
-//		JSONObject responseJson = new JSONObject(responseString);
-//		System.out.println("responsebody------>"+ responseJson);
-//		
-//		String vendorcode = TestUtil.getValueByJPath(responseJson, "/VendorCode");
-//		System.out.println("vendorcode------>"+ vendorcode);
-//		Assert.assertEquals(Integer.parseInt(vendorcode), 7167,"vendor code is not as expected"); //Single value assertion
-//		
-//		//Get value from JSOn array
-//		String lastname = TestUtil.getValueByJPath(responseJson, "/data[0]/last_name");
-//		System.out.println("lastname------>"+ lastname);
-//		
-//		//response header
-//		Header[] responseHeader = closeableHttpResponse.getAllHeaders();
-//		HashMap<String, String> allHeader = new HashMap<String, String>();
-//		
-//		for(Header header: responseHeader) {
-//			allHeader.put(header.getName(),header.getValue());
-//		}
-//		System.out.println("responseHeader------>"+ allHeader);
-//
-//	}
+	@Test
+	public void getTestWithoutHeader() throws ClientProtocolException, IOException {
+		closeableHttpResponse = restclient.get(apiurl);
+
+		//Status Code
+		int statusCode = closeableHttpResponse.getStatusLine().getStatusCode();
+		System.out.println("Status Code-----------> "+ statusCode);
+		Assert.assertEquals(statusCode, RESPONSE_STATUS_CODE_200,"Status code is not as expected");
+
+		//Response body
+		String responseString = EntityUtils.toString(closeableHttpResponse.getEntity(),"UTF-8");
+		JSONObject responseJson = new JSONObject(responseString);
+		System.out.println("responsebody------>"+ responseJson);
+
+		String vendorcode = TestUtil.getValueByJPath(responseJson, "/VendorCode");
+		System.out.println("vendorcode------>"+ vendorcode);
+		Assert.assertEquals(Integer.parseInt(vendorcode), 7167,"vendor code is not as expected"); //Single value assertion
+
+		//Get value from JSOn array
+		String lastname = TestUtil.getValueByJPath(responseJson, "/data[0]/last_name");
+		System.out.println("lastname------>"+ lastname);
+
+		//response header
+		Header[] responseHeader = closeableHttpResponse.getAllHeaders();
+		HashMap<String, String> allHeader = new HashMap<String, String>();
+
+		for(Header header: responseHeader) {
+			allHeader.put(header.getName(),header.getValue());
+		}
+		System.out.println("responseHeader------>"+ allHeader);
+
+	}
 	
 	@Test
 	public void getTestWithHeader() throws ClientProtocolException, IOException {

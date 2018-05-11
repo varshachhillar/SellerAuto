@@ -9,17 +9,13 @@
 
 	<test name="Seller Test Cases">
 		<classes>
-<!--  		
-			<class name="com.seller.qa.tests.LoginPageTest"></class>
-			<class name="com.seller.qa.tests.HomePageTest"></class>
-			<class name="com.seller.qa.tests.POListTest"></class>
-			<class name="com.seller.qa.tests.CreatePODetailTest">
--->			
-			<class name="com.vinc.qa.tests.GetAPITest">
-			</class>
-		
-			
 
+			<class name="com.seller.qa.tests.LoginPageTest"></class>
+			<!--<class name="com.seller.qa.tests.HomePageTest"></class>-->
+			<!--<class name="com.seller.qa.tests.POListTest"></class>-->
+			<!--<class name="com.seller.qa.tests.CreatePODetailTest">-->
+
+			<!--<class name="com.vinc.qa.tests.GetAPITest"></class>-->
 		</classes>
 	</test>
 </suite>

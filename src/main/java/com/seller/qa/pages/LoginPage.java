@@ -24,15 +24,18 @@ public class LoginPage extends TestBase{
 	
 	//Initializing the Page Object:
 	public LoginPage() {
+		System.out.println("login page consuctor");
 		PageFactory.initElements(driver, this);
 	}
 	
 	//Action:
 	public String validateLoginPageTitle(){
+		System.out.println("login pagevalidate title method");
 		return driver.getTitle();
 	}
 	
 	public HomePage login(String un, String pwd) {
+		System.out.println("login page login method");
 		username.sendKeys(un);
 		password.sendKeys(pwd);
 		loginbtn.click();

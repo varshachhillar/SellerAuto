@@ -27,7 +27,8 @@ public class TestBase {
 
 
 	public TestBase() {
-		
+		System.out.println("test base consuctor");
+
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream("C:\\Users\\User1\\eclipse-workspace\\javaenv\\MavenAuto\\src\\main\\java\\com\\seller\\"
@@ -43,7 +44,8 @@ public class TestBase {
 	
 	public static void initialization() {
 		String browserName = prop.getProperty("browser");
-		
+		System.out.println("Test Base initialize method");
+
 		if(browserName.equals("chrome")) {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\User1\\Desktop\\AutoEnv\\chromedriver_win32\\chromedriver.exe");
 			driver = new ChromeDriver();

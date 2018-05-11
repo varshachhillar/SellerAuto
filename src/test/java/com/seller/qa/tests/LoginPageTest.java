@@ -17,10 +17,12 @@ public class LoginPageTest extends TestBase {
 	
 	public LoginPageTest() {
 		super(); // will call parent class constructor
+		System.out.println("login page test consuctor");
 	}
 	
 	@BeforeMethod
 	public void setup() {
+		System.out.println("login page test before method setup");
 		initialization();
 		loginpage = new LoginPage();
 		
@@ -28,19 +30,22 @@ public class LoginPageTest extends TestBase {
 	
 	@Test(priority=2)
 	public void loginPageTitleTest() {
+		System.out.println("login page test loginpage title test method");
 		String title = loginpage.validateLoginPageTitle();
 		Assert.assertEquals(title, "Industrybuying Seller Hub");
 	}
 	
 	@Test(priority=1)
 	public void loginTest() {
+		System.out.println("login page test login test method");
 		homepage = loginpage.login(prop.getProperty("username"),prop.getProperty("password"));
 
 	}
 	
 	@AfterMethod
 	public void teardown() {
-		driver.quit();		
+		System.out.println("login page test after method tear down");
+		driver.quit();
 	}
 	
 	
